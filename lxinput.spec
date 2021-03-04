@@ -1,7 +1,7 @@
 Summary:	Configure keyboard and mouse
 Name:		lxinput
 Version:	0.3.5
-Release:	1
+Release:	2
 License:	GPLv2+
 Group:		Graphical desktop/Other
 # restore broked system changes for GTK3
@@ -10,7 +10,7 @@ Source0:	http://sourceforge.net/lxde/%{name}-%{version}.tar.xz
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	xsltproc
-BuildRequires:	pkgconfig(gtk+-x11-2.0)
+BuildRequires:	pkgconfig(gtk+-3.0)
 
 %description
 LXInput is a small program used to configure keyboard and mouse for LXDE.
@@ -19,7 +19,7 @@ LXInput is a small program used to configure keyboard and mouse for LXDE.
 %setup -q
 
 %build
-%configure --enable-man
+%configure --enable-man --enable-gtk3
 %make_build
 
 %install
