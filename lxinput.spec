@@ -1,15 +1,15 @@
 # git snapshot
 %global snapshot 1
 %if 0%{?snapshot}
-	%global commit		c11ee4f7866de5e36e5b8b0e6959518cab24240d
-	%global commitdate	20230917
+	%global commit		40b9e2b3d742af908fa5ff9233498c8e7f87d0c8
+	%global commitdate	20240816
 	%global shortcommit	%(c=%{commit}; echo ${c:0:7})
 %endif
 
 Summary:	Configure keyboard and mouse
 Name:		lxinput
 Version:	0.3.5
-Release:	3
+Release:	4
 License:	GPLv2+
 Group:		Graphical desktop/Other
 Url:		https://www.lxde.org
