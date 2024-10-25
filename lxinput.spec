@@ -15,7 +15,8 @@ Group:		Graphical desktop/Other
 Url:		https://www.lxde.org
 #Source0:	http://sourceforge.net/lxde/%{name}-%{version}.tar.xz
 Source0:	https://github.com/lxde/lxinput/archive/%{?snapshot:%{commit}}%{!?snapshot:%{version}}/%{name}-%{?snapshot:%{commit}}%{!?snapshot:%{version}}.tar.gz
-BuildRequires:	docbook-dtd412-xml
+BuildRequires:	docbook-dtd-xml
+BuildRequires:	docbook-xsl
 BuildRequires:	intltool >= 0.40.0
 BuildRequires:	xsltproc
 BuildRequires:	pkgconfig(gtk+-3.0)
