@@ -15,6 +15,11 @@ Group:		Graphical desktop/Other
 Url:		https://www.lxde.org
 #Source0:	http://sourceforge.net/lxde/%{name}-%{version}.tar.xz
 Source0:	https://github.com/lxde/lxinput/archive/%{?snapshot:%{commit}}%{!?snapshot:%{version}}/%{name}-%{?snapshot:%{commit}}%{!?snapshot:%{version}}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	docbook-dtds
 BuildRequires:	docbook-xsl
 BuildRequires:	intltool >= 0.40.0
